@@ -1,0 +1,25 @@
+.flatpickr-input {
+    background-color: var(--content-bg);
+    color: var(--text-primary);
+}
+.flatpickr-calendar {
+    background-color: var(--content-bg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+}
+.flatpickr-day {
+    color: var(--text-primary);
+}
+.flatpickr-day.selected {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.flatpickr-day:hover {
+    background-color: var(--border-light);
+}
+.flatpickr-months {
+    background-color: var(--primary-color);
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+    background-color: var(--primary-color);
+}

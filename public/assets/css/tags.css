@@ -1,0 +1,63 @@
+/* Tagify Dark Mode Compatibility */
+.tagify {
+    background-color: var(--content-bg);
+    border-color: var(--border-color);
+}
+.tagify__tag {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+.tagify__tag:hover {
+    background-color: var(--primary-dark);
+}
+.tagify__tag__removeBtn {
+    color: #ffffff;
+}
+.tagify__input {
+    color: var(--text-primary);
+}
+.tagify__dropdown {
+    background-color: var(--content-bg);
+    border-color: var(--border-color);
+    box-shadow: var(--shadow-lg);
+}
+.tagify__dropdown__item {
+    color: var(--text-primary);
+}
+.tagify__dropdown__item--active {
+    background-color: rgba(99, 102, 241, 0.15);
+    color: var(--primary-light);
+}
+.tagify:hover {
+    border-color: var(--primary-color);
+}
+.tagify.tagify--focus {
+    border-color: var(--primary-color);
+}
+
+/* Color Tags */
+.tagify__tag.tagify--color-red {
+    background-color: #ef4444;
+}
+.tagify__tag.tagify--color-blue {
+    background-color: #3b82f6;
+}
+.tagify__tag.tagify--color-green {
+    background-color: #22c55e;
+}
+.tagify__tag.tagify--color-yellow {
+    background-color: #eab308;
+}
+.tagify__tag.tagify--color-purple {
+    background-color: #a855f7;
+}
+.tagify__tag.tagify--color-pink {
+    background-color: #ec4899;
+}
+
+/* Tag Counter */
+.tag-counter {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}

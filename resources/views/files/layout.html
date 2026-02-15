@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Emoce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="custom-admin.css">
+</head>
+<body>
+    
+    <!-- Main Wrapper -->
+    <div class="admin-wrapper">
+        
+        <!-- Sidebar -->
+        <aside class="admin-sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                    <span class="brand-text">Emoce Admin</span>
+                </div>
+                <button class="sidebar-close d-lg-none" id="sidebarClose">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-body">
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <!-- Dashboard -->
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link active">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        
+                        <!-- Components with dropdown -->
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#componentsMenu">
+                                <i class="bi bi-grid-3x3-gap"></i>
+                                <span>Components</span>
+                                <i class="bi bi-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="nav-dropdown collapse" id="componentsMenu">
+                                <li><a href="buttons.html" class="nav-link">Buttons</a></li>
+                                <li><a href="cards.html" class="nav-link">Cards</a></li>
+                                <li><a href="alerts.html" class="nav-link">Alerts</a></li>
+                                <li><a href="badges.html" class="nav-link">Badges</a></li>
+                                <li><a href="progress.html" class="nav-link">Progress Bars</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Forms with multi-level dropdown -->
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#formsMenu">
+                                <i class="bi bi-ui-checks"></i>
+                                <span>Forms</span>
+                                <i class="bi bi-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="nav-dropdown collapse" id="formsMenu">
+                                <li><a href="form-elements.html" class="nav-link">Form Elements</a></li>
+                                <li><a href="form-validation.html" class="nav-link">Form Validation</a></li>
+                                <!-- Second Level Dropdown -->
+                                <li class="has-dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#advancedForms">
+                                        Advanced Forms
+                                        <i class="bi bi-chevron-down dropdown-icon"></i>
+                                    </a>
+                                    <ul class="nav-dropdown collapse" id="advancedForms">
+                                        <li><a href="form-wizard.html" class="nav-link">Form Wizard</a></li>
+                                        <li><a href="form-upload.html" class="nav-link">File Upload</a></li>
+                                        <!-- Third Level Dropdown -->
+                                        <li class="has-dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#specialInputs">
+                                                Special Inputs
+                                                <i class="bi bi-chevron-down dropdown-icon"></i>
+                                            </a>
+                                            <ul class="nav-dropdown collapse" id="specialInputs">
+                                                <li><a href="date-picker.html" class="nav-link">Date Picker</a></li>
+                                                <li><a href="color-picker.html" class="nav-link">Color Picker</a></li>
+                                                <li><a href="rich-editor.html" class="nav-link">Rich Editor</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Tables -->
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#tablesMenu">
+                                <i class="bi bi-table"></i>
+                                <span>Tables</span>
+                                <i class="bi bi-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="nav-dropdown collapse" id="tablesMenu">
+                                <li><a href="basic-table.html" class="nav-link">Basic Table</a></li>
+                                <li><a href="datatable.html" class="nav-link">DataTable</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Pages -->
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#pagesMenu">
+                                <i class="bi bi-file-earmark-text"></i>
+                                <span>Pages</span>
+                                <i class="bi bi-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="nav-dropdown collapse" id="pagesMenu">
+                                <li><a href="profile.html" class="nav-link">Profile</a></li>
+                                <li><a href="settings.html" class="nav-link">Settings</a></li>
+                                <li><a href="invoice.html" class="nav-link">Invoice</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Charts -->
+                        <li class="nav-item">
+                            <a href="charts.html" class="nav-link">
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <span>Charts</span>
+                            </a>
+                        </li>
+                        
+                        <!-- Icons -->
+                        <li class="nav-item">
+                            <a href="icons.html" class="nav-link">
+                                <i class="bi bi-star-fill"></i>
+                                <span>Icons</span>
+                            </a>
+                        </li>
+                        
+                        <!-- Divider -->
+                        <li class="nav-divider">
+                            <span>Settings</span>
+                        </li>
+                        
+                        <!-- User Management -->
+                        <li class="nav-item">
+                            <a href="users.html" class="nav-link">
+                                <i class="bi bi-people"></i>
+                                <span>Users</span>
+                            </a>
+                        </li>
+                        
+                        <!-- Settings -->
+                        <li class="nav-item">
+                            <a href="settings.html" class="nav-link">
+                                <i class="bi bi-gear"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff" alt="User" class="user-avatar">
+                    <div class="user-info">
+                        <h6 class="user-name">John Doe</h6>
+                        <span class="user-role">Administrator</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <div class="admin-content">
+            
+            <!-- Header / Navbar -->
+            <header class="admin-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="search-box d-none d-md-block">
+                        <i class="bi bi-search"></i>
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <!-- Theme Toggle -->
+                    <button class="header-btn theme-toggle" id="themeToggle">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    
+                    <!-- Notifications -->
+                    <div class="dropdown">
+                        <button class="header-btn position-relative" data-bs-toggle="dropdown">
+                            <i class="bi bi-bell-fill"></i>
+                            <span class="notification-badge">3</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end notification-dropdown">
+                            <div class="dropdown-header">
+                                <h6>Notifications</h6>
+                                <span class="badge bg-primary">3 New</span>
+                            </div>
+                            <div class="notification-list">
+                                <a href="#" class="notification-item unread">
+                                    <div class="notification-icon bg-primary">
+                                        <i class="bi bi-bag-check"></i>
+                                    </div>
+                                    <div class="notification-content">
+                                        <h6>New order received</h6>
+                                        <p>Order #12345 has been placed</p>
+                                        <span class="notification-time">2 min ago</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="notification-item unread">
+                                    <div class="notification-icon bg-success">
+                                        <i class="bi bi-person-check"></i>
+                                    </div>
+                                    <div class="notification-content">
+                                        <h6>New user registered</h6>
+                                        <p>Sarah Smith joined your platform</p>
+                                        <span class="notification-time">1 hour ago</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="notification-item">
+                                    <div class="notification-icon bg-warning">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="notification-content">
+                                        <h6>Server warning</h6>
+                                        <p>CPU usage is above 80%</p>
+                                        <span class="notification-time">3 hours ago</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer">
+                                <a href="#">View all notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Messages -->
+                    <div class="dropdown d-none d-md-block">
+                        <button class="header-btn position-relative" data-bs-toggle="dropdown">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span class="notification-badge bg-success">5</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end message-dropdown">
+                            <div class="dropdown-header">
+                                <h6>Messages</h6>
+                                <span class="badge bg-success">5 New</span>
+                            </div>
+                            <div class="message-list">
+                                <a href="#" class="message-item unread">
+                                    <img src="https://ui-avatars.com/api/?name=Emma+Wilson&background=22c55e&color=fff" alt="User" class="message-avatar">
+                                    <div class="message-content">
+                                        <h6>Emma Wilson</h6>
+                                        <p>Hey, how are you doing today?</p>
+                                        <span class="message-time">5 min ago</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="message-item">
+                                    <img src="https://ui-avatars.com/api/?name=Mike+Chen&background=3b82f6&color=fff" alt="User" class="message-avatar">
+                                    <div class="message-content">
+                                        <h6>Mike Chen</h6>
+                                        <p>The project deadline is tomorrow</p>
+                                        <span class="message-time">1 hour ago</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer">
+                                <a href="#">View all messages</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- User Profile -->
+                    <div class="dropdown">
+                        <button class="header-profile" data-bs-toggle="dropdown">
+                            <img src="https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff" alt="User">
+                            <span class="d-none d-md-block">John Doe</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end profile-dropdown">
+                            <div class="dropdown-header">
+                                <img src="https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff" alt="User">
+                                <div>
+                                    <h6>John Doe</h6>
+                                    <span>admin@emoce.com</span>
+                                </div>
+                            </div>
+                            <a href="profile.html" class="dropdown-item">
+                                <i class="bi bi-person"></i> My Profile
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <i class="bi bi-gear"></i> Settings
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="bi bi-wallet2"></i> Billing
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item text-danger">
+                                <i class="bi bi-box-arrow-right"></i> Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Page Content -->
+            <main class="admin-main">
+                <!-- Content will be loaded here -->
+                <div id="pageContent"></div>
+            </main>
+            
+            <!-- Footer -->
+            <footer class="admin-footer">
+                <div class="footer-content">
+                    <p class="mb-0">&copy; 2024 Emoce Admin Panel. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="admin-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoce Admin Panel - Welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
+            --gradient: linear-gradient(135deg, #6366f1, #8b5cf6);
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .welcome-container {
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        .welcome-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .welcome-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .welcome-title {
+            font-size: 48px;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+        
+        .welcome-subtitle {
+            font-size: 20px;
+            color: #64748b;
+            margin-bottom: 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 28px;
+            color: #ffffff;
+        }
+        
+        .feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+        
+        .feature-desc {
+            font-size: 14px;
+            color: #64748b;
+            margin: 0;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        .btn-main {
+            background: var(--gradient);
+            color: #ffffff;
+            padding: 14px 32px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: none;
+            font-size: 16px;
+            margin: 0 8px 16px;
+        }
+        
+        .btn-main:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+            color: #ffffff;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-color);
+            padding: 14px 32px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+            font-size: 16px;
+            margin: 0 8px 16px;
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: #ffffff;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #64748b;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .welcome-card {
+                padding: 40px 24px;
+            }
+            
+            .welcome-title {
+                font-size: 36px;
+            }
+            
+            .welcome-subtitle {
+                font-size: 16px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="welcome-card">
+            <div class="welcome-header">
+                <h1 class="welcome-title">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                    Emoce Admin Panel
+                </h1>
+                <p class="welcome-subtitle">
+                    A modern, professional, and fully responsive admin dashboard
+                </p>
+            </div>
+            
+            <div class="feature-grid">
+                <a href="dashboard.html" class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-speedometer2"></i>
+                    </div>
+                    <h3 class="feature-title">Dashboard</h3>
+                    <p class="feature-desc">Analytics, charts, and key metrics</p>
+                </a>
+                
+                <a href="form-elements.html" class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-ui-checks"></i>
+                    </div>
+                    <h3 class="feature-title">Forms</h3>
+                    <p class="feature-desc">Input fields and form validation</p>
+                </a>
+                
+                <a href="datatable.html" class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-table"></i>
+                    </div>
+                    <h3 class="feature-title">DataTables</h3>
+                    <p class="feature-desc">Advanced data tables with sorting</p>
+                </a>
+                
+                <a href="cards.html" class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                    </div>
+                    <h3 class="feature-title">Cards</h3>
+                    <p class="feature-desc">Beautiful card components</p>
+                </a>
+                
+                <a href="buttons.html" class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-cursor-fill"></i>
+                    </div>
+                    <h3 class="feature-title">Buttons</h3>
+                    <p class="feature-desc">Button styles and variations</p>
+                </a>
+                
+                <a href="alerts.html" class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </div>
+                    <h3 class="feature-title">Alerts</h3>
+                    <p class="feature-desc">Alert messages and notifications</p>
+                </a>
+                
+                <a href="badges.html" class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-award-fill"></i>
+                    </div>
+                    <h3 class="feature-title">Badges</h3>
+                    <p class="feature-desc">Status badges and labels</p>
+                </a>
+                
+                <a href="progress.html" class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-pie-chart-fill"></i>
+                    </div>
+                    <h3 class="feature-title">Progress Bars</h3>
+                    <p class="feature-desc">Loading and progress indicators</p>
+                </a>
+            </div>
+            
+            <div class="cta-section">
+                <h3 style="color: #1e293b; margin-bottom: 24px;">Get Started Now</h3>
+                <a href="dashboard.html" class="btn-main">
+                    <i class="bi bi-rocket-takeoff me-2"></i>View Dashboard
+                </a>
+                <a href="README.md" class="btn-outline">
+                    <i class="bi bi-book me-2"></i>Read Documentation
+                </a>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <h4 class="stat-value">15+</h4>
+                        <p class="stat-label">Components</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="stat-value">100%</h4>
+                        <p class="stat-label">Responsive</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="stat-value">2</h4>
+                        <p class="stat-label">Themes</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="stat-value">Bootstrap 5</h4>
+                        <p class="stat-label">Framework</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
